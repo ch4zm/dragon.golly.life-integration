@@ -794,6 +794,17 @@
                     }
                   }
 
+                  // Update rule name
+                  if (game.hasOwnProperty('ruleName')) {
+                    var ruleName = game.ruleName;
+                    var ruleTags = elem.getElementsByClassName('rule-name');
+                    var rt;
+                    for (rt = 0; rt < ruleTags.length; rt++) {
+                      ruleNameElem = ruleTags[rt];
+                      ruleNameElem.innerHTML = ruleName;
+                    }
+                  }
+
                   // Team colors
                   if (game.hasOwnProperty('team1Color') && game.hasOwnProperty('team2Color')) {
                     t1tags = elem.getElementsByClassName('team1color');
