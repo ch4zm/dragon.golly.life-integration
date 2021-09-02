@@ -8,6 +8,10 @@
   color: #FF9300 !important;
 }
 
+.navbar-brand {
+  font-size: 1.095rem;
+}
+
 /* navbar logo padding */
 .navbar-brand-logo {
   width: 25px;
