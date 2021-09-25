@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 
-    <title>GollyX456</title>
+    <title>GollyX456 Dragon Cup</title>
     <meta charset="utf-8" />
 
     <script>
@@ -24,8 +24,8 @@ var mapsApiUrl = 'https://maps.golly456.life';
 
     <!--
         Versions:
-        gollyx-dragon-pelican: 34.0.0
-        gollyx-dragon-pelican-theme: 34.0.1
+        gollyx-dragon-pelican: 42.0.0
+        gollyx-dragon-pelican-theme: 42.0.3
     -->
 
     <link href="https://dragon.integration.golly456.life/theme/css/flipdown.min.css"  rel="stylesheet" type="text/css">
@@ -110,13 +110,17 @@ var mapsApiUrl = 'https://maps.golly456.life';
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Moss_Landing_Daredevils">Moss Landing Daredevils</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Mountain_View_Miners">Mountain View Miners</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Oakland_Bees">Oakland Bees</a>
+            <a class="dropdown-item" href="https://wiki.golly.life/wiki/Pacific_Grove_Monarchists">Pacific Grove Monarchists</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Richmond_Slicks">Richmond Slicks</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/San_Gregorio_Sand_Crabs">San Gregorio Sand Crabs</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/San_Jose_Avionics">San Jose Avionics</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Sand_City_Sidewinders">Sand City Sidewinders</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Santa_Cruz_Bananas">Santa Cruz Bananas</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Sausalito_Bouncy_Castles">Sausalito Bouncy Castles</a>
+            <!--
+                Bye swashbucklers
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Seaside_Swashbucklers">Seaside Swashbucklers</a>
+            -->
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Sutro_Tower">Sutro Tower</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Vallejo_Barnstormers">Vallejo Barnstormers</a>
           </div>
@@ -242,10 +246,6 @@ add this to pelican pages:
               Map: <span class="map-name">Map Name</span>
             </div>
 
-            <div class="game-card-rule finished-game-card-rule">
-              <span class="rule-name">Rule Name</span>
-            </div>
-
             <div class="game-card-map finished-game-card-simulate">
               <a href="#" style="margin-top: 20px;" role="button" class="simulate btn btn-primary btn-sm btn-success">View Simulation</a>
             </div>
@@ -296,10 +296,6 @@ add this to pelican pages:
               Map: <span class="map-name">Map Name</span>
             </div>
 
-            <div class="game-card-rule finished-game-card-rule">
-              <span class="rule-name">Rule Name</span>
-            </div>
-
             <div class="game-card-map finished-game-card-simulate">
               <a href="#" style="margin-top: 20px;" role="button" class="simulate btn btn-primary btn-sm btn-success">View Simulation</a>
             </div>
@@ -322,9 +318,6 @@ add this to pelican pages:
             </div>
             <div class="game-card-map inprogress-game-card-map">
               Map: <span class="map-name">Map Name</span>
-            </div>
-            <div class="game-card-rule inprogress-game-card-rule">
-              <span class="rule-name">Rule Name</span>
             </div>
             <div class="game-card-map inprogress-game-card-simulate">
               <a href="#" style="margin-top: 20px;" role="button" class="simulate btn btn-primary btn-sm btn-success">View Simulation</a>
@@ -351,9 +344,6 @@ add this to pelican pages:
             <div class="game-card-map inprogress-game-card-map">
               Map: <span class="map-name">Map Name</span>
             </div>
-            <div class="game-card-rule inprogress-game-card-rule">
-              <span class="rule-name">Rule Name</span>
-            </div>
             <div class="game-card-map inprogress-game-card-simulate">
               <a href="#" style="margin-top: 20px;" role="button" class="simulate btn btn-primary btn-sm btn-success">View Simulation</a>
             </div>
@@ -377,9 +367,6 @@ add this to pelican pages:
             <div class="game-card-map scheduled-game-card-map">
               Map: <span class="map-name">Map Name</span>
             </div>
-            <div class="game-card-rule scheduled-game-card-rule">
-              <span class="rule-name">Rule Name</span>
-            </div>
           </div>
         </div></template>
 
@@ -401,9 +388,6 @@ add this to pelican pages:
             </div>
             <div class="game-card-map scheduled-game-card-map">
               Map: <span class="map-name">Map Name</span>
-            </div>
-            <div class="game-card-rule scheduled-game-card-rule">
-              <span class="rule-name">Rule Name</span>
             </div>
           </div>
         </div></template>
@@ -503,7 +487,7 @@ add this to pelican pages:
 <div class="container invisible" id="container-loading">
 
   <div class="row text-center notify-header invisible loading-message" id="season-loading-message">
-    <div class="col-md-12">
+    <div class="col-lg-12">
       <h4 class="text-success">The site is currently loading...</h4>
     </div>
   </div>
@@ -514,17 +498,17 @@ add this to pelican pages:
 <div class="container invisible" id="container-mode0009">
 
     <div class="row text-center landing-header justify-content-lg-center">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span> will begin soon!</h2>
       </div>
     </div>
 
-    <div class="row justify-content-lg-center flipdown-clock">
+    <div class="row justify-content-sm-center flipdown-clock">
       <div id="flipdown" class="flipdown"></div>
     </div>
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <p>The next season will begin soon. In the meantime, here is a Game of Life simulator. Click to turn cells on and off!</p>
       </div>
     </div>
@@ -539,23 +523,23 @@ add this to pelican pages:
 <div class="container invisible" id="container-mode1019">
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span><span style="display: none;" id="landing-header-day"> Day <span id="landing-header-day-number">_</span></span>: Current Games</h2>
       </div>
     </div>
 
     <div class="row text-center notify-header invisible loading-message" id="mode1019-loading-message">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
 
     <div class="row justify-content-lg-center" id="season-leagues-container">
-      <div class="col-md-5 league-container" id="league-1-container">
+      <div class="col-lg-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-md-5 league-container" id="league-2-container">
+      <div class="col-lg-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -567,28 +551,28 @@ add this to pelican pages:
 <div class="container container-mode2029 invisible" id="container-mode21">
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span>: Dragon Cup League Division Series</h2>
         <h4>This best of 5 series will begin soon!</h4>
       </div>
     </div>
 
-    <div class="row justify-content-lg-center flipdown-clock">
+    <div class="row justify-content-sm-center flipdown-clock">
       <div id="flipdown" class="flipdown"></div>
     </div>
 
     <div class="row text-center notify-header invisible loading-message" id="mode21-loading-message">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
 
-    <div class="row justify-content-md-center waiting-container" id="lds-waiting-container">
-      <div class="col-md-5 league-container" id="league-1-container">
+    <div class="row justify-content-lg-center waiting-container" id="lds-waiting-container">
+      <div class="col-lg-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-md-5 league-container" id="league-2-container">
+      <div class="col-lg-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -604,28 +588,28 @@ add this to pelican pages:
 <div class="container container-mode2029 invisible" id="container-mode22">
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span>: Dragon Cup League Championship Series</h2>
         <h4>This best of 5 series will begin soon!</h4>
       </div>
     </div>
 
-    <div class="row justify-content-lg-center flipdown-clock">
+    <div class="row justify-content-sm-center flipdown-clock">
       <div id="flipdown" class="flipdown"></div>
     </div>
 
     <div class="row text-center notify-header invisible loading-message" id="mode22-loading-message">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
 
-    <div class="row justify-content-md-center waiting-container" id="lcs-waiting-container">
-      <div class="col-md-5 league-container" id="league-1-container">
+    <div class="row justify-content-lg-center waiting-container" id="lcs-waiting-container">
+      <div class="col-lg-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-md-5 league-container" id="league-2-container">
+      <div class="col-lg-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -640,24 +624,24 @@ add this to pelican pages:
 <div class="container container-mode2029 invisible" id="container-mode23">
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span>: Dragon Cup</h2>
         <h4>This best of 7 series will begin soon!</h4>
       </div>
     </div>
 
-    <div class="row justify-content-lg-center flipdown-clock">
+    <div class="row justify-content-sm-center flipdown-clock">
       <div id="flipdown" class="flipdown"></div>
     </div>
 
     <div class="row text-center notify-header invisible loading-message" id="mode23-loading-message">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
 
-    <div class="row justify-content-md-center waiting-container" id="hcs-waiting-container">
-      <div class="col-md-5 league-container" id="hcs-league-waiting-container">
+    <div class="row justify-content-lg-center waiting-container" id="hcs-waiting-container">
+      <div class="col-lg-6 league-container" id="hcs-league-waiting-container">
       </div>
     </div>
 
@@ -671,24 +655,24 @@ add this to pelican pages:
 <div class="container container-mode3039 invisible" id="container-mode31">
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span>: Dragon Cup League Division Series</h2>
         <h4>Best of 5</h4>
       </div>
     </div>
 
     <div class="row text-center notify-header invisible loading-message" id="mode31-loading-message">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
 
-    <div class="row justify-content-md-center ongoing-container lds-ongoing-container">
-      <div class="col-md-5 league-container" id="league-1-container">
+    <div class="row justify-content-lg-center ongoing-container lds-ongoing-container">
+      <div class="col-lg-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-md-5 league-container" id="league-2-container">
+      <div class="col-lg-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -700,11 +684,10 @@ add this to pelican pages:
 
 
 
-
 <div class="container container-mode3039 invisible" id="container-mode32">
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span>: Dragon Cup League Championship Series</h2>
         <h4>Best of 5</h4>
       </div>
@@ -716,12 +699,12 @@ add this to pelican pages:
       </div>
     </div>
 
-    <div class="row justify-content-md-center ongoing-container" id="lcs-ongoing-container">
-      <div class="col-md-5 league-container" id="league-1-container">
+    <div class="row justify-content-lg-center ongoing-container" id="lcs-ongoing-container">
+      <div class="col-lg-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-md-5 league-container" id="league-2-container">
+      <div class="col-lg-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -736,20 +719,20 @@ add this to pelican pages:
 <div class="container container-mode3039 invisible" id="container-mode33">
 
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Season <span id="landing-header-season-number">_</span>: Dragon Cup</h2>
         <h4>Best of 7</h4>
       </div>
     </div>
 
     <div class="row text-center notify-header invisible loading-message" id="mode33-loading-message">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
 
-    <div class="row justify-content-md-center ongoing-container" id="hcs-ongoing-container">
-      <div class="col-md-5 league-container" id="hcs-league-ongoing-container">
+    <div class="row justify-content-lg-center ongoing-container" id="hcs-ongoing-container">
+      <div class="col-lg-6 league-container" id="hcs-league-ongoing-container">
       </div>
     </div>
 
@@ -764,7 +747,7 @@ add this to pelican pages:
   <h2 class="text-center landing-header">Season <span id="landing-header-season-number">_</span> has ended.<h2>
 
   <div class="row text-center notify-header invisible loading-message" id="mode33-loading-message">
-    <div class="col-md-12">
+    <div class="col-lg-12">
       <h4 class="text-success">The site is currently loading...</h4>
     </div>
   </div>
@@ -774,7 +757,7 @@ add this to pelican pages:
   <h3 class="text-center invisible champion-header" id="champion-name-header">Your Dragon Cup Champions are: The <span id="champion-team">Winners</span>!</h3>
 
   <div class="row text-center landing-header">
-    <div class="col-md-12">
+    <div class="col-lg-12">
       <p>The next season will begin soon. In the meantime, here is a Game of Life simulator. Click to turn cells on and off!</p>
     </div>
   </div>
@@ -791,13 +774,13 @@ add this to pelican pages:
 <div class="container invisible" id="container-error">
 
     <div class="row text-center notify-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2 class="text-danger">The site has experienced a technical glitch.</h2>
       </div>
     </div>
 
     <div class="row text-center notify-body">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <p>
         Ninjas have been dispatched to track down those responsible for the downtime
         and bring them back to Hellmouth Community College to fix the site.
@@ -810,7 +793,7 @@ add this to pelican pages:
 <noscript>
   <div class="container" id="container-noscript">
     <div class="row text-center landing-header">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2 class="text-danger">You must have Javascript enabled to view this site.</h2>
       </div>
     </div>
