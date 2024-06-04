@@ -274,6 +274,7 @@
               rowButtonUlList = document.createElement('ul');
               rowButtonUlList.classList.add('pagination');
               rowButtonUlList.classList.add('pagination-sm');
+              rowButtonUlList.classList.add('justify-content-md-center');
 
             }
             iDay++;
